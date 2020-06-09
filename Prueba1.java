@@ -63,4 +63,20 @@ class Lista {
     }
     System.out.println();
   }
+
+  public float promedio() {
+    float sumatoria = 0;
+    int counter = 0;
+    NodoLista temp = cabeza;
+    while (temp.siguiente != null) {
+      sumatoria += (temp.siguiente.dato * 1.0);
+      counter++;
+      temp = temp.siguiente;
+    }
+    if (counter > 0) {
+      return (sumatoria / counter);
+    } else {
+      return sumatoria;
+    }
+  }
 }

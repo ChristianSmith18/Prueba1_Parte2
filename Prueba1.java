@@ -12,3 +12,16 @@ class NodoLista {
     siguiente = null;
   }
 }
+
+class Lista {
+  NodoLista cabeza;
+
+  Lista() {
+    cabeza = new NodoLista();
+    cabeza.siguiente = null;
+  }
+
+  public static void main(String[] args) {
+
+  }
+}

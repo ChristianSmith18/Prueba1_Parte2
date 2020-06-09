@@ -28,6 +28,8 @@ class Lista {
     L.insertar(30, 2);
     L.insertar(40, 3);
     L.mostrar();
+    float media = L.promedio();
+    System.out.println("El promedio de la lista es: " + media);
   }
 
   public void insertar(int x, int p) {

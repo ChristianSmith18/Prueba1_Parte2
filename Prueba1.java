@@ -47,4 +47,15 @@ class Lista {
     x.siguiente = p.siguiente;
     p.siguiente = x;
   }
+
+  private void mostrar() {
+    NodoLista temp = cabeza;
+    boolean first = true;
+    while (temp.siguiente != null) {
+      System.out.print((first ? "" : "-") + temp.siguiente.dato);
+      temp = temp.siguiente;
+      first = false;
+    }
+    System.out.println();
+  }
 }
